@@ -1,6 +1,6 @@
 
 /** Способы оплаты */
-export type TPayment = 'card' | 'cash';
+export type TPayment = 'card' | 'cash' | '';
 
 /** Данные одного товара */
 export interface IProduct {

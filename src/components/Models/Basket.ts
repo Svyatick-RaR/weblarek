@@ -11,9 +11,7 @@ export class Basket {
 
     /** Добавить товар в корзину */
     addItem(product: IProduct): void {
-        if (!this.hasItem(product.id)) {
-            this.items.push(product);
-        }
+        this.items.push(product);
     }
 
     /** Удалить товар из корзины по идентификатору */
@@ -36,7 +34,7 @@ export class Basket {
         return this.items.length;
     }
 
-    /** Проверить наличие товара в корзине */
+    /** Проверить наличие товара */
     hasItem(id: string): boolean {
         return this.items.some(item => item.id === id);
     }

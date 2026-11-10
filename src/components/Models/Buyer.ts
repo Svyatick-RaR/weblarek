@@ -1,9 +1,8 @@
-
 import { IBuyer } from '../../types';
 
 export class Buyer {
     private buyer: IBuyer = {
-        payment: 'card',
+        payment: '',
         email: '',
         phone: '',
         address: ''
@@ -25,7 +24,7 @@ export class Buyer {
     /** Очистить данные покупателя */
     clear(): void {
         this.buyer = {
-            payment: 'card',
+            payment: '',
             email: '',
             phone: '',
             address: ''
